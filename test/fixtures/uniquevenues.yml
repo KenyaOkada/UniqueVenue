@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  unique_venue_name: MyString
+  unique_venue_description: MyString
+  inquiry: MyString
+  adress: MyString
+  price: MyString
+  holding_space: MyString
+  people: MyString
+  parking: MyString
+  access: MyString
+
+two:
+  unique_venue_name: MyString
+  unique_venue_description: MyString
+  inquiry: MyString
+  adress: MyString
+  price: MyString
+  holding_space: MyString
+  people: MyString
+  parking: MyString
+  access: MyString

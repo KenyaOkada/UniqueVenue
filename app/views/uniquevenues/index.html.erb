@@ -1,0 +1,13 @@
+<h2>
+  ユニークベニュー一覧
+  <%= link_to "ユニークベニューの登録", new_uniquevenue_path, class: "header-menu" %>
+</h2>
+<ul>
+  <% @uniquevenues.each do |uniquevenue| %>
+  <li>
+    <%= link_to uniquevenue.uniquevenue_name, uniquevenue_path(uniquevenue) %>
+    <%= link_to "編集", edit_uniquevenue_path(uniquevenue), class: "command" %>
+    <%= link_to "削除", uniquevenue_path(uniquevenue), method: :delete, class: "command", data: { confirm: '削除しますか？' } %>
+  </li>
+  <% end %>
+</ul>

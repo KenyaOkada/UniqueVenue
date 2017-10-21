@@ -1,0 +1,33 @@
+<%= form_for @uniquevenue do |f| %>
+
+<p>
+  <%= f.text_field :uniquevenue_name, placeholder: "enter uniquevenue_name" %>
+  <% if @uniquevenue.errors.messages[:uniquevenue_name].any? %>
+  <span class="error"><%= @uniquevenue.errors.messages[:uniquevenue][0] %></span>
+  <% end %>
+</p>
+
+<p>
+  <%= f.text_area :uniquevenue_description, placeholder: "enter uniquevenue_description" %>
+  <% if @uniquevenue.errors.messages[:uniquevenue_description].any? %>
+  <span class="error"><%= @uniquevenue.errors.messages[:uniquevenue_description][0] %></span>
+  <% end %>
+</p>
+
+<p>
+  <%= f.number_field :price, placeholder: "enter price" %>
+  <% if @uniquevenue.errors.messages[:price].any? %>
+  <span class="error"><%= @uniquevenue.errors.messages[:price][0] %></span>
+  <% end %>
+</p>
+
+<p>
+  <%= f.text_field :adress, placeholder: "enter adress" %>
+  <% if @uniquevenue.errors.messages[:adress].any? %>
+  <span class="error"><%= @uniquevenue.errors.messages[:adress][0] %></span>
+  <% end %>
+</p>
+
+<%= f.submit %>
+
+<% end %>
