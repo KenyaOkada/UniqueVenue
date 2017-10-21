@@ -28,6 +28,34 @@
   <% end %>
 </p>
 
+<p>
+  <%= f.text_field :parking, placeholder: "enter parking" %>
+  <% if @uniquevenue.errors.messages[:parking].any? %>
+  <span class="error"><%= @uniquevenue.errors.messages[:parking][0] %></span>
+  <% end %>
+</p>
+
+<p>
+  <%= f.text_area :inquiry, placeholder: "enter inquiry" %>
+  <% if @uniquevenue.errors.messages[:inquiry].any? %>
+  <span class="error"><%= @uniquevenue.errors.messages[:inquiry][0] %></span>
+  <% end %>
+</p>
+
+<p>
+  <%= f.text_field :holding_space, placeholder: "enter holding_space" %>
+  <% if @uniquevenue.errors.messages[:holding_space].any? %>
+  <span class="error"><%= @uniquevenue.errors.messages[:holding_space][0] %></span>
+  <% end %>
+</p>
+
+<p>
+  <%= f.text_field :access, placeholder: "enter access" %>
+  <% if @uniquevenue.errors.messages[:access].any? %>
+  <span class="error"><%= @uniquevenue.errors.messages[:access][0] %></span>
+  <% end %>
+</p>
+
 <%= f.submit %>
 
 <% end %>

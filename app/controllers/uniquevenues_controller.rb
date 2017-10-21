@@ -44,7 +44,7 @@ class UniquevenuesController < ApplicationController
 
   private
     def uniquevenue_params
-      params.require(:uniquevenue).permit(:uniquevenue_name, :uniquevenue_description, :price, :adress)
+      params.require(:uniquevenue).permit(:uniquevenue_name, :uniquevenue_description, :price, :adress, :parking, :inquiry, :holding_space, :access)
     end
 
 end
